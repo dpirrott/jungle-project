@@ -5,8 +5,11 @@
   </header>
 
   <% if enhanced_cart.count == 0  %>
+  <div class="alert alert-warning" role="alert">
+  My bad cuh, looks like you got nada in yo cart -> <%= link_to "Return to homepage", products_path %>
+  </div>
 
-    <p>Sorry you have nothing in yo cart you cheap as bish</p>
+
 
   <% else %>
 

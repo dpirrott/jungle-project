@@ -6,6 +6,8 @@
 
   <div class="well">
     <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+    <%= link_to 'View all products', admin_products_path, class: 'btn btn-info' %>
+    <%= link_to 'Back to dashboard', admin_root_path, class: 'btn btn-info' %>
   </div>
 
   <div class="panel panel-default products">

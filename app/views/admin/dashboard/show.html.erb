@@ -1,4 +1,13 @@
 <h1>Admin Dashboard</h1>
 <p>Total products: <%= @productCount %></p>
 <p>Total categories: <%= @categoryCount %></p>
-<%= link_to 'View all products', admin_products_path %>
+
+<ul class="nav nav-pills">
+  <li role="presentation">
+    <%= link_to 'View all products', admin_products_path %>
+  </li>
+  <li role="presentation">
+    <%= link_to 'View all categories', admin_categories_path %>
+  </li>
+</ul>
+

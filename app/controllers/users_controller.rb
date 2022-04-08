@@ -4,11 +4,12 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
+    puts "Testing -------> user: #{user}"
     if user.save
       session[:user_id] = user.id
-      redirect_to '/'
+      redirect_to :root
     else
-      redirect_to '/signup'
+      render :new
     end
   end
 
@@ -21,4 +22,5 @@ class UsersController < ApplicationController
       :password,
       :password_confirmation
     )
+  end
 end

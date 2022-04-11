@@ -29,7 +29,5 @@ RSpec.describe Product, type: :model do
       @product = Product.new(name: "Spoon", price: 499, quantity: 100)
       expect(@product.save).to be false
     end
-
-
   end
 end

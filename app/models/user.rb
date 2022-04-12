@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_secure_password
-  validates :fullName, presence: true
+  validates :name, presence: true
   validates :email, presence: true
   validates :email, uniqueness: { case_sensitive: false }
   validates :password, presence: true
@@ -10,6 +10,6 @@ class User < ActiveRecord::Base
 
   def authenticate_with_credentials(email, password)
     user = User.find_by_email(email)
-    if user && user.authenticate(password)
+    # if user && user.authenticate(password)
   end
 end

@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(user_params)
+    puts user_params
+    user = User.new(user_params, email: user_params[:email].downcase())
     puts "Testing -------> user: #{user}"
     if user.save
       session[:user_id] = user.id
@@ -22,5 +23,8 @@ class UsersController < ApplicationController
       :password,
       :password_confirmation
     )
+    email = params[:email]
+    params[:email] = email.downcase
+    params
   end
 end

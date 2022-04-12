@@ -71,8 +71,18 @@ RSpec.describe User, type: :model do
       @userTest = User.authenticate_with_credentials("dp", "abcd")
       expect(@userTest).to eq(@user)
     end
-    it "should return user even if trailing/leading spaces in email" do
+    it "should return user even if trailing/leading spaces in user inputted email" do
       @user = User.create(name: "Dylan", email: 'dp', password: 'abcd', password_confirmation: 'abcd')
+      @userTest = User.authenticate_with_credentials("  dp   ", "abcd")
+      expect(@userTest).to eq(@user)
+    end
+    it "should return user even if trailing/leading spaces in stored email" do
+      @user = User.create(name: "Dylan", email: '  dp ', password: 'abcd', password_confirmation: 'abcd')
+      @userTest = User.authenticate_with_credentials("dp", "abcd")
+      expect(@userTest).to eq(@user)
+    end
+    it "should return user even if written in wrong case" do
+      @user = User.create(name: "Dylan", email: 'Dp', password: 'abcd', password_confirmation: 'abcd')
       @userTest = User.authenticate_with_credentials("  dp   ", "abcd")
       expect(@userTest).to eq(@user)
     end

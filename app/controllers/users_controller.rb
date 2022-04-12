@@ -1,14 +1,15 @@
 class UsersController < ApplicationController
   def new
+    @errors ||= []
   end
 
   def create
     user = User.new(user_params)
-    puts "Testing -------> user: #{user}"
     if user.save
       session[:user_id] = user.id
       redirect_to :root
     else
+      @errors = user.errors.full_messages
       render :new
     end
   end

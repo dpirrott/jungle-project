@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def new
+    @errors ||= []
   end
 
   def create
@@ -8,6 +9,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to :root
     else
+      @errors = user.errors.full_messages
       render :new
     end
   end

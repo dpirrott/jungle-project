@@ -58,13 +58,23 @@ RSpec.describe User, type: :model do
   describe '.authenticate_with_credentials' do
     # examples for this class method here
     it "should return nil if user not found" do
-
+      @user = User.authenticate_with_credentials("dpp", "hashish")
+      expect(@user).to be nil
     end
     it "should return nil if user found but password is incorrect" do
-
+      @user = User.create(name: "Dylan", email: 'dp', password: 'abcd', password_confirmation: 'abcd')
+      @userTest = User.authenticate_with_credentials("dp", "1234")
+      expect(@userTest).to be nil
     end
     it "should return user if user is found and password is correct" do
-
+      @user = User.create(name: "Dylan", email: 'dp', password: 'abcd', password_confirmation: 'abcd')
+      @userTest = User.authenticate_with_credentials("dp", "abcd")
+      expect(@userTest).to eq(@user)
+    end
+    it "should return user even if trailing/leading spaces in email" do
+      @user = User.create(name: "Dylan", email: 'dp', password: 'abcd', password_confirmation: 'abcd')
+      @userTest = User.authenticate_with_credentials("  dp   ", "abcd")
+      expect(@userTest).to eq(@user)
     end
 
   end

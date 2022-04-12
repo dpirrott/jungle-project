@@ -20,7 +20,14 @@ RSpec.describe User, type: :model do
       end
       it "should accept if passwords match" do
         @user = User.new(name: "Dylan", email: 'dp', password: 'xyz6', password_confirmation: 'xyz6')
-        puts @user.errors[:message]
+        expect(@user.save).to be true
+      end
+      it "should reject if password length is less than 4" do
+        @user = User.new(name: "Dylan", email: 'dp', password: 'xyz', password_confirmation: 'xyz')
+        expect(@user.save).to be false
+      end
+      it "should return true if password length is 4 or more" do
+        @user = User.new(name: "Dylan", email: 'dp', password: 'abcd', password_confirmation: 'abcd')
         expect(@user.save).to be true
       end
     end

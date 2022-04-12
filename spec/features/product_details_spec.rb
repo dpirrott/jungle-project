@@ -19,11 +19,8 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
   scenario "They navigate from home page to product detail page when clicking a product" do
     # ACT
     visit root_path
+    first('article.product a h4').click
 
-    find('article.product a').click
-
-    # DEBUG / VERIFY
-    save_screenshot
     expect(page).to have_css 'article.product-detail'
   end
 

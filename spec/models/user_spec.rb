@@ -31,10 +31,41 @@ RSpec.describe User, type: :model do
         expect(@user.save).to be true
       end
     end
+
+    describe "Emails and Names" do
+      it "should reject if name not present" do
+        @user = User.new(email: 'dp', password: 'abcd', password_confirmation: 'abcd')
+        expect(@user.save).to be false
+      end
+      it "should reject if email not present" do
+        @user = User.new(name: "Dylan", password: 'abcd', password_confirmation: 'abcd')
+        expect(@user.save).to be false
+      end
+      it "should accept if email and name are present with functional password" do
+        @user = User.new(name: "Dylan", email: 'dp', password: 'abcd', password_confirmation: 'abcd')
+        expect(@user.save).to be true
+      end
+      it "should reject if email not unique" do
+        @user1 = User.new(name: "Dylan", email: 'dp', password: 'abcd', password_confirmation: 'abcd')
+        @user2 = User.new(name: "Jimmy", email: 'DP', password: 'abcd', password_confirmation: 'abcd')
+        expect(@user1.save).to be true
+        expect(@user2.save).to be false
+      end
+
+    end
   end
 
   describe '.authenticate_with_credentials' do
     # examples for this class method here
+    it "should return nil if user not found" do
+
+    end
+    it "should return nil if user found but password is incorrect" do
+
+    end
+    it "should return user if user is found and password is correct" do
+
+    end
 
   end
 

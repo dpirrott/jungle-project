@@ -6,8 +6,14 @@
 
 <%= form_for :session, {url: '/sessions', method: 'post'} do |f| %>
 
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  <%= f.submit "Submit" %>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <%= f.text_field :email, html: {class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Password</label>
+    <%= f.password_field :password, html: {class: 'form-control'} %>
+  </div>
+  <%= f.submit "Submit", html: {class: 'btn btn-default'}%>
 
 <% end %>

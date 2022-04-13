@@ -17,6 +17,10 @@ class CartsController < ApplicationController
     redirect_to :back
   end
 
+  def disable_item
+
+  end
+
   private
 
   def modify_cart_delta(product_id, delta)

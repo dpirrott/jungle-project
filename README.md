@@ -14,9 +14,9 @@ The Jungle project was not only about learning a new language, ecosystem, and fr
 | :-------------------------------------------------------------------------------------------------------: |
 |                                     **Add to Cart and Submit Order**                                      |
 
-| !["Browse Categories and Login to Admin Dashboard"](https://github.com/dpirrott/jungle-project/blob/master/docs/CategoriesAndAdminDash.gif) |
-| :-----------------------------------------------------------------------------------------------------------------------------------------: |
-|                                             **Browse Categories and Login to Admin Dashboard**                                              |
+| !["Browse Categories and Login to Admin Dashboard"](https://github.com/dpirrott/jungle-project/blob/master/docs/CategoryAndAdminDash.gif) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
+|                                            **Browse Categories and Login to Admin Dashboard**                                             |
 
 | !["Admin Adding Product and Delete"](https://github.com/dpirrott/jungle-project/blob/master/docs/AdminAddDeleteProduct.gif) |
 | :-------------------------------------------------------------------------------------------------------------------------: |

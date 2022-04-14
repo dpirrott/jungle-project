@@ -14,6 +14,14 @@ The Jungle project was not only about learning a new language, ecosystem, and fr
 | :-------------------------------------------------------------------------------------------------------: |
 |                                     **Add to Cart and Submit Order**                                      |
 
+| !["Browse Categories and Login to Admin Dashboard"](https://github.com/dpirrott/jungle-project/blob/master/docs/CategoriesAndAdminDash.gif) |
+| :-----------------------------------------------------------------------------------------------------------------------------------------: |
+|                                             **Browse Categories and Login to Admin Dashboard**                                              |
+
+| !["Admin Adding Product and Delete"](https://github.com/dpirrott/jungle-project/blob/master/docs/AdminAddDeleteProduct.gif) |
+| :-------------------------------------------------------------------------------------------------------------------------: |
+|                                              **Admin Add and Delete Product**                                               |
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)

@@ -6,13 +6,13 @@ The Jungle project was not only about learning a new language, ecosystem, and fr
 
 ## Project Demo
 
-| !["Register New User"](https://github.com/dpirrott/scheduler/blob/master/docs/Registration.gif) |
-| :---------------------------------------------------------------------------------------------: |
-|                                      **Register New User**                                      |
+| !["Register New User"](https://github.com/dpirrott/jungle-project/blob/master/docs/Registration.gif) |
+| :--------------------------------------------------------------------------------------------------: |
+|                                        **Register New User**                                         |
 
-| !["Interview Scheduler demo"](https://github.com/dpirrott/scheduler/blob/master/docs/interviewSchedulerGif.gif) |
-| :-------------------------------------------------------------------------------------------------------------: |
-|                              **Interview Scheduler demo (delete, create, update)**                              |
+| !["Create and Submit Order"](https://github.com/dpirrott/jungle-project/blob/master/docs/CreateOrder.gif) |
+| :-------------------------------------------------------------------------------------------------------: |
+|                                     **Add to Cart and Submit Order**                                      |
 
 ## Additional Steps for Apple M1 Machines
 

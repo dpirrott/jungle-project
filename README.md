@@ -1,8 +1,10 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+Jungle is a mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
-The Jungle project was not only about learning a new language, ecosystem, and framework. It was about developing a feel for what it takes to inherit an existing codebase in a language/framework that I wasn’t comfortable with. Working on this project allowed me to apply previous learning tactics to research and become familiar with the once foreign concept of Ruby on Rails. Realistic features and bug fixes were described, rather than shown through step-by-step instructions to simulate real-world scenarios.
+The primary goal of this project was to get comfortable being uncomfortable, by inheriting an existing codebase and all its problems. Working on this project allowed me to apply previous learning tactics to research and become familiar with what used to be a foreign language, Ruby on Rails.
+
+Realistic features and bug fixes were described, rather than shown through step-by-step instructions to simulate real-world scenarios.
 
 ## Project Demo
 

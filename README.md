@@ -4,6 +4,16 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 The Jungle project was not only about learning a new language, ecosystem, and framework. It was about developing a feel for what it takes to inherit an existing codebase in a language/framework that I wasn’t comfortable with. Working on this project allowed me to apply previous learning tactics to research and become familiar with the once foreign concept of Ruby on Rails. Realistic features and bug fixes were described, rather than shown through step-by-step instructions to simulate real-world scenarios.
 
+## Project Demo
+
+| !["Register New User"](https://github.com/dpirrott/scheduler/blob/master/docs/Registration.gif) |
+| :---------------------------------------------------------------------------------------------: |
+|                                      **Register New User**                                      |
+
+| !["Interview Scheduler demo"](https://github.com/dpirrott/scheduler/blob/master/docs/interviewSchedulerGif.gif) |
+| :-------------------------------------------------------------------------------------------------------------: |
+|                              **Interview Scheduler demo (delete, create, update)**                              |
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
